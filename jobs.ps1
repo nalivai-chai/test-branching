@@ -1,8 +1,11 @@
 
-function invoke-job() {
+function Invoke-Job() {
     param(
-        jobname,
-        jobid
+        $JobName,
+        $JobId,
+        $TimeOut
     )
+
+    "Run job: $JobName" | Out-Host
 
 }

@@ -1,10 +1,15 @@
+Import-Module .\jobs.ps1
 
-function main() {
+function Invoke-Main($RunJobList) {
 
-    if (agrs) {
-        for (argval in args) {
-            argval | out-host
+    if ($RunJobList) {
+        foreach ($JobName in $RunJobList) {
+            Invoke-Job -JobName $JobName
         }
-    {
+    }
 
 }
+
+"Run main" | Out-Host
+
+Invoke-Main -RunJobList $args
