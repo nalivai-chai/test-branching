@@ -6,6 +6,7 @@ function Invoke-Main($RunJobList) {
         foreach ($JobName in $RunJobList) {
             Invoke-Job -JobName $JobName
         }
+        "All jobs is started" | Out-Host
     }
     else {
         "No jobs to run" | Out-Host
