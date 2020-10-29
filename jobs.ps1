@@ -6,6 +6,8 @@ function Invoke-Job() {
         $TimeOut
     )
 
+    # Develop over server&client
+
     if ($Timeout) {
         "Run job: $JobName; Timeout: $TimeOut" | Out-Host
     }
@@ -32,6 +34,7 @@ function Stop-Job() {
         $JobId
     )
 
+    # Develop over serve&client
     #TOTD:get-job status, pid and stopit.
 
 }
