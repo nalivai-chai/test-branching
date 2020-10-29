@@ -20,6 +20,26 @@ function Invoke-Job() {
         return $null
     } 
     # TODO: check current job module
+    $JobModule = "$JobsDir/$JobName.ps1"
+
     # TODO: run job module
+
+}
+
+function Stop-Job() {
+    param(
+        $JobName,
+        $JobId
+    )
+
+
+}
+
+function Get-JobStatus() {
+    param(
+        $JobName,
+        $JobId
+    )
+
 
 }
