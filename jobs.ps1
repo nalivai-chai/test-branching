@@ -7,10 +7,10 @@ function Invoke-Job() {
     )
 
     if ($Timeout) {
-        "Run job '$JobName' with timeout '$Timeout'" | Out-Host
+        "Run job: $JobName; Timeout: $TimeOut" | Out-Host
     }
     else {
-        "Run job '$JobName'" | Out-Host
+        "Run job: $JobName" | Out-Host
     }
 
 }
