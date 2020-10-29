@@ -24,7 +24,10 @@ function Invoke-Job() {
     # TODO: check current job module
     $JobModule = "$JobsDir/$JobName.ps1"
 
+    # Client change
     # TODO: run job module
+
+    # Client change
 
 }
 
@@ -37,6 +40,8 @@ function Stop-Job() {
     # Develop over serve&client
     #TOTD:get-job status, pid and stopit.
 
+    # Client change
+    
 }
 
 function Get-JobStatus() {
