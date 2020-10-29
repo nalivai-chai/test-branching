@@ -32,6 +32,7 @@ function Stop-Job() {
         $JobId
     )
 
+    #TOTD:get-job status, pid and stopit.
 
 }
 
