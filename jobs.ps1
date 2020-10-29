@@ -6,6 +6,6 @@ function Invoke-Job() {
         $TimeOut
     )
 
-    "Run job: $JobName" | Out-Host
+    "Run job: $JobName with timeout $TimeOut" | Out-Host
 
 }
