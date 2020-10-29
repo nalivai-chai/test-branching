@@ -8,7 +8,7 @@ function Invoke-Main($RunJobList) {
                 Invoke-Job -JobName $JobName
             }
         }
-        "All jobs is started" | Out-Host
+        "Jobs is started" | Out-Host
     }
     else {
         "No jobs to run" | Out-Host
@@ -19,9 +19,19 @@ function Invoke-Main($RunJobList) {
 function Invoke-AddFunc($FuncName) {
 
     #TODO: invoke addition function by name
+}
 
+function Get-ParamsData($ArgArray) {
+
+    $params = @{
+        Jobs = $ArgArray
+    }
+
+    return $params
 }
 
 "Run main" | Out-Host
 
-Invoke-Main -RunJobList $args
+$MainParams = Get-ParamsData -ArgArray $args
+
+Invoke-Main -RunJobList $MainParams.Jobs
