@@ -16,7 +16,8 @@ function Invoke-Job() {
     # Check jobs modules direcotry.
     $JobsDir = Get-ChildItem -Path ./jobs -Directory
     if (-not $JobsDir) {
-        #TODO: Error No Dir
+        "Job modules` directory doesn't exists" | Out-Host
+        return $null
     } 
     # TODO: check current job module
     # TODO: run job module
