@@ -16,6 +16,12 @@ function Invoke-Main($RunJobList) {
 
 }
 
+function Invoke-AddFunc($FuncName) {
+
+    #TODO: invoke addition function by name
+
+}
+
 "Run main" | Out-Host
 
 Invoke-Main -RunJobList $args
