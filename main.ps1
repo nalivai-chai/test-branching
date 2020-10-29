@@ -7,6 +7,9 @@ function Invoke-Main($RunJobList) {
             Invoke-Job -JobName $JobName
         }
     }
+    else {
+        "No jobs to run" | Out-Host
+    }
 
 }
 
