@@ -16,6 +16,17 @@ function Invoke-Main($RunJobList) {
 
 }
 
+function Get-ParamsData($ArgArray) {
+
+    $params = @{
+        Jobs = $ArgArray
+    }
+
+    return $params
+}
+
 "Run main" | Out-Host
 
-Invoke-Main -RunJobList $args
+$MainParams = Get-ParamsData -ArgArray $args
+
+Invoke-Main -RunJobList $MainParams.Jobs
