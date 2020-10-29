@@ -15,6 +15,7 @@ function Invoke-Job() {
     else {
         "Run job: $JobName" | Out-Host
     }
+    # Server change 2
 
     # Check jobs modules direcotry.
     $JobsDir = Get-ChildItem -Path ./jobs -Directory
@@ -31,6 +32,8 @@ function Invoke-Job() {
     # Client change 2
 
     # Server change
+    # Server change 2    
+
     # Client change
 
 }
@@ -56,5 +59,6 @@ function Get-JobStatus() {
     )
     
     # Server change
+    # Server change 2
 
 }
