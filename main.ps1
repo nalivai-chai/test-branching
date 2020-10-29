@@ -1,10 +1,12 @@
 Import-Module .\jobs.ps1
 
-function Invoke-Main($RunJobList) {
+function Invoke-Main($RunJobList) { 
 
     if ($RunJobList) {
         foreach ($JobName in $RunJobList) {
-            Invoke-Job -JobName $JobName
+            if ($JobName) {
+                Invoke-Job -JobName $JobName
+            }
         }
     }
     else {
