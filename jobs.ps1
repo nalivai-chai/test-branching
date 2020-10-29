@@ -6,7 +6,11 @@ function Invoke-Job() {
         $TimeOut
     )
 
+<<<<<<< HEAD
     # Develop over server&client
+=======
+    # Client change 2
+>>>>>>> 8e07055... Add client changes #2
 
     if ($Timeout) {
         "Run job: $JobName; Timeout: $TimeOut" | Out-Host
@@ -27,6 +31,12 @@ function Invoke-Job() {
     # Client change
     # TODO: run job module
 
+<<<<<<< HEAD
+=======
+    # Client change 2
+
+    # Server change
+>>>>>>> 8e07055... Add client changes #2
     # Client change
 
 }
@@ -40,7 +50,8 @@ function Stop-Job() {
     # Develop over serve&client
     #TOTD:get-job status, pid and stopit.
 
-    # Client change
+    # Client change 1
+    # Client change 2
     
 }
 
