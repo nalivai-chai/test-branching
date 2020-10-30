@@ -37,6 +37,8 @@ function Invoke-Job() {
 
     # Client change
 
+    # Set job new status.
+
 }
 
 function Stop-Job() {
