@@ -2,8 +2,6 @@ Import-Module .\jobs.ps1
 
 function Invoke-Main($RunJobList) { 
 
-    Invoke-Feature2 -ArgList $RunJobList
-
     if ($RunJobList) {
         foreach ($JobName in $RunJobList) {
             if ($JobName) {
@@ -24,6 +22,8 @@ function Get-ParamsData($ArgArray) {
     # Get params as:
     # --Jobs=Job1,Job2...
     # --Timeout=5 
+
+    Invoke-Feature2 -ArgList $ArgArray
 
     $Jobs = @()
     foreach ($Job in $ArgArray) {
