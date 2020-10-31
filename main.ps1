@@ -18,8 +18,16 @@ function Invoke-Main($RunJobList) {
 
 function Get-ParamsData($ArgArray) {
 
+    $Jobs = @()
+    foreach ($Job in $ArgArray) {
+        if ($Job) {
+            $Jobs += $Job
+        }
+    }
+
     $params = @{
-        Jobs = $ArgArray
+        Jobs = $Jobs;
+        JobsParams = $null
     }
 
     return $params
