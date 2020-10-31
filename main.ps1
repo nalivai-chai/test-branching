@@ -33,6 +33,10 @@ function Get-ParamsData($ArgArray) {
     return $params
 }
 
+function Invoke-Feature1() {
+
+}
+
 "Run main" | Out-Host
 
 $MainParams = Get-ParamsData -ArgArray $args
