@@ -20,6 +20,11 @@ function Invoke-Main($RunJobList) {
 
 function Get-ParamsData($ArgArray) {
 
+    # TODO: parce args
+    # Get params as:
+    # --Jobs=Job1,Job2...
+    # --Timeout=5 
+
     $Jobs = @()
     foreach ($Job in $ArgArray) {
         if ($Job) {
